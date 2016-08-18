@@ -14,7 +14,7 @@
   "devDependencies": {
     "angular-mocks": "^1.4.0"
   },
-  "appPath": "app",
+  "appPath": "../server/assets",
   "moduleName": "clientApp",
   "overrides": {
     "bootstrap": {

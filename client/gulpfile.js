@@ -10,7 +10,7 @@ var wiredep = require('wiredep').stream;
 var runSequence = require('run-sequence');
 
 var yeoman = {
-  app: require('./bower.json').appPath || 'app',
+  app: '../server/assets',
   dist: 'dist'
 };
 
@@ -49,7 +49,7 @@ var styles = lazypipe()
     precision: 10
   })
   .pipe($.autoprefixer, 'last 1 version')
-  .pipe(gulp.dest, '.tmp/styles');
+  .pipe(gulp.dest, '../server/assets/styles');
 
 ///////////
 // Tasks //
